@@ -41,12 +41,7 @@ body {
 
 .logo-img {
   height: 65px;
-}
-
-.logo-img path {
-  fill: #ffffff;
-  stroke: rgba(255, 255, 255, 0.3);
-  stroke-width: 1px;
+  filter: brightness(0) invert(1);
 }
 
 .logo-text {
