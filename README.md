@@ -112,6 +112,7 @@ To add a new section:
 - **Smooth Scrolling**: Navigation links smoothly scroll to sections
 - **Mobile Menu**: Hamburger menu for mobile navigation
 - **Professional Theme**: Dark brown and gold color scheme
+- **Contact Form**: Powered by Formspree for easy email submissions
 - **Accessibility**: Keyboard navigation support and reduced motion preferences
 - **SEO Optimized**: Meta tags and semantic HTML structure
 
