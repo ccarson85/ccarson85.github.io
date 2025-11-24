@@ -4,7 +4,7 @@ Professional website for Christopher Carson, piano teacher and performer in Metr
 
 ## Overview
 
-This is a static HTML website designed for hosting on GitHub Pages with a custom domain. The site features a professional dark theme with brown and gold tones, showcasing piano lessons, educational philosophy, and professional accomplishments.
+This is a static HTML website designed for hosting on GitHub Pages. The site features a professional dark theme with brown and gold tones, showcasing piano lessons, educational philosophy, and professional accomplishments.
 
 ## Setup Instructions
 
@@ -49,52 +49,15 @@ This is a static HTML website designed for hosting on GitHub Pages with a custom
    ```
 
 2. **Enable GitHub Pages**
-   - Go to your repository on GitHub
+   - Go to your repository on GitHub: https://github.com/ccarson85/ccarson85.github.io
    - Click on "Settings"
    - Scroll to "Pages" in the left sidebar
-   - Under "Source", select "main" branch
+   - Under "Build and deployment" → "Source", select "Deploy from a branch"
+   - Choose branch: **main**
+   - Choose folder: **/ (root)**
    - Click "Save"
    - Your site will be published at `https://ccarson85.github.io`
-
-### Setting Up Custom Domain (chriscarsonmusic.com)
-
-The `CNAME` file is already configured with your custom domain. Follow these steps to complete the setup:
-
-1. **Configure DNS with your domain registrar**
-
-   Add the following DNS records at your domain registrar:
-
-   **For apex domain (chriscarsonmusic.com):**
-   - Type: `A`
-   - Host: `@`
-   - Value: `185.199.108.153`
-
-   - Type: `A`
-   - Host: `@`
-   - Value: `185.199.109.153`
-
-   - Type: `A`
-   - Host: `@`
-   - Value: `185.199.110.153`
-
-   - Type: `A`
-   - Host: `@`
-   - Value: `185.199.111.153`
-
-   **For www subdomain:**
-   - Type: `CNAME`
-   - Host: `www`
-   - Value: `ccarson85.github.io`
-
-2. **Configure custom domain in GitHub**
-   - Go to your repository Settings > Pages
-   - Under "Custom domain", enter `chriscarsonmusic.com`
-   - Click "Save"
-   - Check "Enforce HTTPS" (may take a few minutes to become available)
-
-3. **Wait for DNS propagation**
-   - DNS changes can take up to 24-48 hours to propagate
-   - You can check status at: https://www.whatsmydns.net/
+   - Wait 1-3 minutes for deployment to complete
 
 ## Project Structure
 
@@ -104,7 +67,6 @@ ccarson85.github.io/
 ├── index.html          # Main HTML file with all sections
 ├── styles.css          # Styling with dark brown/gold theme
 ├── script.js           # Navigation and interactive features
-├── CNAME              # Custom domain configuration
 ├── .gitignore         # Git ignore rules
 ├── README.md          # This file
 └── images/            # Directory for images
@@ -179,7 +141,6 @@ To add a new section:
 
 For issues or questions about GitHub Pages:
 - [GitHub Pages Documentation](https://docs.github.com/en/pages)
-- [Custom Domain Setup](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site)
 
 ## License
 
