@@ -440,10 +440,11 @@ footer {
 .footer-link {
   color: #c8c8c8;
   text-decoration: none;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 0.5rem;
   transition: color 0.3s;
+  margin-bottom: 0.8rem;
 }
 
 .footer-link:hover {
