@@ -219,10 +219,10 @@
 
       reset() {
         this.x = Math.random() * canvas.width;
-        this.y = -50;
         this.size = Math.random() * 80 + 40;
-        this.speedY = Math.random() * 0.3 + 0.1;
-        this.speedX = (Math.random() - 0.5) * 0.3;
+        this.y = -this.size - 20;
+        this.speedY = Math.random() * 0.15 + 0.05;
+        this.speedX = (Math.random() - 0.5) * 0.15;
         this.opacity = Math.random() * 0.3 + 0.1;
 
         // Color variations - warm and cool tones
@@ -241,14 +241,14 @@
         this.x += this.speedX;
 
         // Wrap around edges
-        if (this.y > canvas.height + 50) {
+        if (this.y > canvas.height + this.size + 20) {
           this.reset();
         }
-        if (this.x < -50) {
-          this.x = canvas.width + 50;
+        if (this.x < -this.size - 20) {
+          this.x = canvas.width + this.size + 20;
         }
-        if (this.x > canvas.width + 50) {
-          this.x = -50;
+        if (this.x > canvas.width + this.size + 20) {
+          this.x = -this.size - 20;
         }
       }
 
@@ -272,7 +272,7 @@
 
     function initParticles() {
       particles = [];
-      const particleCount = Math.min(15, Math.floor(canvas.width / 100));
+      const particleCount = Math.min(8, Math.floor(canvas.width / 150));
       for (let i = 0; i < particleCount; i++) {
         particles.push(new Particle());
       }
