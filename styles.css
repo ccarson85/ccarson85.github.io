@@ -278,6 +278,33 @@ h2:after {
   color: #444;
 }
 
+.media-content {
+  max-width: 1200px;
+  margin: 4rem auto 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+
+.soundcloud-embed {
+  display: flex;
+  flex-direction: column;
+}
+
+.soundcloud-embed h3 {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  font-family: 'Forum', serif;
+  line-height: 1.4;
+}
+
+.soundcloud-embed iframe {
+  border-radius: 0;
+  height: 140px;
+}
+
 .contact-form {
   max-width: 800px;
   margin: 4rem auto;
@@ -406,6 +433,10 @@ footer {
   }
   .lessons-grid {
     grid-template-columns: 1fr;
+  }
+  .media-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
   .hero-content {
     grid-template-columns: 1fr;
