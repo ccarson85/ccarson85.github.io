@@ -13,6 +13,25 @@ body {
   line-height: 1.6;
   color: #1a1a1a;
   background: #ffffff;
+  overflow-y: scroll;
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .navbar {
@@ -465,6 +484,13 @@ footer {
 }
 
 @media (max-width: 968px) {
+  .logo-img {
+    height: 50px;
+  }
+  .logo-text {
+    font-size: 2rem;
+  }
+
   .hamburger {
     display: flex;
   }
@@ -514,10 +540,17 @@ footer {
   }
   .hero-text h1 {
     font-size: 3.5rem;
+    margin-top: 6cap;
   }
   .hero-image {
+    width: 80%;
     max-width: 400px;
     margin: 0 auto;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 100%;
   }
   .footer-content {
     grid-template-columns: 1fr;
