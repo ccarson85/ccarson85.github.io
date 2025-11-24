@@ -6,6 +6,9 @@
   <meta name="description" content="Chris Carson - Piano teacher, music director, and performer in MetroWest Boston. Offering private piano lessons for all levels.">
   <meta name="keywords" content="piano lessons, music teacher, Boston, MetroWest, piano instructor, music education">
   <title>Chris Carson Music | Piano Lessons in MetroWest Boston</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Bonheur+Royale&family=Forum&display=swap" rel="stylesheet">
@@ -19,6 +22,11 @@
         <img src="images/logo.svg" alt="Logo" class="logo-img">
         <span class="logo-text">Chris Carson Music</span>
       </div>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <ul class="nav-menu">
         <li><a href="#home" class="nav-link">Home</a></li>
         <li><a href="#lessons" class="nav-link">Lessons</a></li>
@@ -167,5 +175,23 @@
       <p>&copy; 2025 Chris Carson Music. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+      });
+    });
+  </script>
 </body>
 </html>
