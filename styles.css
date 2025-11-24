@@ -16,24 +16,6 @@ body {
   overflow-y: scroll;
 }
 
-/* Custom scrollbar styling */
-::-webkit-scrollbar {
-  width: 12px;
-}
-
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 6px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
 .navbar {
   background: #1a1a1a;
   padding: 1rem 0;
